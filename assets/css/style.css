@@ -103,10 +103,7 @@ a:hover, .underline:hover {
 }
 .header .header_content{
 	height: 100vh;
-	/*display: flex;*/
-	/*justify-content: space-around;*/
-	/*align-items: center;*/
-	/*background-image: url("../img/img2.png");*/
+	width: 100%;
 	background-size: contain;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -114,7 +111,7 @@ a:hover, .underline:hover {
 }
 .header_content .image{
 	/*border: 1px solid white;*/
-	width: 50%;
+	width: 30%;
 	float: left;
 	margin-left: 20%;
 }
@@ -227,11 +224,11 @@ button{
 	align-items: center;
 	background: #000; 
 }
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .header_content .image{
-	  width: 40%;
+	  width: 20%;
   }
-}
+} */
 @media only screen and (max-width: 600px) {
   .header_content .image{
 	  margin-left: 0%;
