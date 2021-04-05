@@ -224,11 +224,11 @@ button{
 	align-items: center;
 	background: #000; 
 }
-/* @media only screen and (max-width: 800px) {
-  .header_content .image{
-	  width: 20%;
+@media only screen and (max-width: 800px) {
+  .header .header_content{{
+	  width: 100%;
   }
-} */
+}
 @media only screen and (max-width: 600px) {
   .header_content .image{
 	  margin-left: 0%;
