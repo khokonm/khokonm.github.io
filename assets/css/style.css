@@ -160,18 +160,35 @@ a:hover, .underline:hover {
   height: 300px;
   margin: 0 20px;
   background: #000;
-  background-blend-mode: multiply;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-
 }
-.swiper-slide p{
+.swiper-slide .swiper-content{
+	background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);;
+	height: 0px;
+	overflow: hidden;
+  	background-blend-mode: multiply;
+  	position: absolute;
+  	bottom: -10px;
+  	left: 0;
+  	transition: all .3s ease-in;
+  	padding-top: 20px;
+}
+.swiper-slide .swiper-content p{
 	text-align: center;
 }
-.swiper-slide:hover{
+.swiper-slide:hover .swiper-content{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  bottom: 0;
 	/*background: ;*/
 }
 .swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-left {
